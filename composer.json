@@ -1,0 +1,33 @@
+{
+    "name": "DejwCake/AdminLTE",
+    "description": "CakePHP 3.x AdminLTE Theme. Based on maiconpinto/cakephp-adminlte-theme.",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "templates", "plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maicon Pinto",
+            "email": "maiconsilva.pinto@gmail.com",
+            "homepage": "https://www.maiconpinto.com.br/",
+            "role": "Author"
+        },
+        {
+            "name": "David Běhal",
+            "email": "behal.david@gmail.com",
+            "homepage": "https://www.dejw.sk/",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.3.2 <4.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DejwCake\\AdminLTE\\": "src"
+        }
+    }
+}
