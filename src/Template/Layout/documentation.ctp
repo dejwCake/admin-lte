@@ -136,7 +136,7 @@
     <?php echo $this->Html->script('DejwCake/AdminLTE.AdminLTE.min'); ?>
     <!-- AdminLTE for demo purposes -->
     <?php echo $this->fetch('script'); ?>
-    <?php echo $this->fetch('scriptBotton'); ?>
+    <?php echo $this->fetch('scriptBottom'); ?>
     <?php echo $this->Html->script('https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js'); ?>
     <?php echo $this->Html->script('DejwCake/AdminLTE.documentation'); ?>
   </body>
