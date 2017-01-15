@@ -1,5 +1,5 @@
 <?php
-$file = $theme['folder'] . DS . 'src' . DS . 'Template' . DS . 'Element' . DS . 'nav-top.ctp';
+$file = $theme['folder'] . DS . 'src' . DS . 'Template' . DS . 'Plugin' . DS . 'DejwCake' . DS . 'AdminLTE' . DS . 'Element' . DS . 'nav-top.ctp';
 
 if (file_exists($file)) {
     ob_start();

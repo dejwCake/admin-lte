@@ -1,5 +1,5 @@
 <?php
-$file = $theme['folder'] . DS . 'src' . DS . 'Template' . DS . 'Element' . DS . 'aside' . DS . 'sidebar-menu.ctp';
+$file = $theme['folder'] . DS . 'src' . DS . 'Template' . DS . 'Plugin' . DS . 'DejwCake' . DS . 'AdminLTE' . DS . 'Element' . DS . 'aside' . DS . 'sidebar-menu.ctp';
 
 if (file_exists($file)) {
     ob_start();
