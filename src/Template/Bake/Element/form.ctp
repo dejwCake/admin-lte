@@ -25,7 +25,7 @@ use Cake\Utility\Inflector;
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <?= $this->Form->create($<%= $singularVar %>, array('role' => 'form')) ?>
+        <?= $this->Form->create($<%= $singularVar %>, ['role' => 'form']) ?>
           <div class="box-body">
           <?php
 <%
