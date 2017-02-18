@@ -1,116 +1,37 @@
-.btn-file {
-    position: relative;
-    overflow: hidden;
-    vertical-align: middle;
+@charset "UTF-8";
+/*
+ * jQuery File Upload Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px !important;
+  direction: ltr;
+  cursor: pointer;
 }
 
-.btn-file > input {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    font-size: 23px;
-    cursor: pointer;
-    opacity: 0;
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
     filter: alpha(opacity=0);
-    transform: translate(-300px, 0) scale(4);
-    direction: ltr;
-}
-
-.fileinput {
-    display: inline-block;
-    margin-bottom: 9px;
-}
-
-.fileinput.fileinput-row {
-    display: block;
-}
-
-.fileinput .uneditable-input {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-    cursor: text;
-}
-
-.fileinput .thumbnail {
-    display: inline-block;
-    margin-bottom: 5px;
-    overflow: hidden;
-    text-align: center;
-    vertical-align: middle;
-    border-color: #e5e5e5;
-}
-
-.fileinput .thumbnail > img {
-    max-height: 100%;
-}
-
-.fileinput .btn {
-    vertical-align: middle;
-}
-
-.fileinput-exists .fileinput-new,
-.fileinput-new .fileinput-exists {
-    display: none;
-}
-
-.fileinput-inline .fileinput-controls {
-    display: inline;
-}
-
-.fileinput .uneditable-input {
-    white-space: normal;
-}
-
-.fileinput-new .input-group .btn-file {
-    border-radius: 0 4px 4px 0;
-}
-
-.fileinput-new .input-group .btn-file.btn-xs,
-.fileinput-new .input-group .btn-file.btn-sm {
-    border-radius: 0 3px 3px 0;
-}
-
-.fileinput-new .input-group .btn-file.btn-lg {
-    border-radius: 0 6px 6px 0;
-}
-
-.form-group.has-warning .fileinput .uneditable-input {
-    color: #d35400;
-    border-color: #f39c12;
-}
-
-.form-group.has-warning .fileinput .fileinput-preview {
-    color: #d35400;
-}
-
-.form-group.has-warning .fileinput .thumbnail {
-    border-color: #f39c12;
-}
-
-.form-group.has-error .fileinput .uneditable-input {
-    color: #F2DEDE;
-    border-color: #e74c3c;
-}
-
-.form-group.has-error .fileinput .fileinput-preview {
-    color: #F2DEDE;
-}
-
-.form-group.has-error .fileinput .thumbnail {
-    border-color: #e74c3c;
-}
-
-.form-group.has-success .fileinput .uneditable-input {
-    color: #468847;
-    border-color: #2ecc71;
-}
-
-.form-group.has-success .fileinput .fileinput-preview {
-    color: #468847;
-}
-
-.form-group.has-success .fileinput .thumbnail {
-    border-color: #2ecc71;
+    font-size: 100%;
+    height: 100%;
+  }
 }
