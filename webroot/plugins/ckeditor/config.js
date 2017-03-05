@@ -39,4 +39,6 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserUploadUrl = '/media/upload/ckeditor';
 
     config.allowedContent = true;
+
+    config.enterMode = CKEDITOR.ENTER_BR;
 };
