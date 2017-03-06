@@ -27,13 +27,12 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="<?php echo $this->Url->build(array('controller' => 'pages', 'action' => 'display', 'home', 'plugin' => false, 'prefix' => false)); ?>"><?php echo $theme['logo']['large'] ?></a>
+        <a href="<?php echo $this->Url->build(array('controller' => 'pages', 'action' => 'display', 'home', 'plugin' => false, 'prefix' => false, 'language' => $selectedLanguage)); ?>"><?php echo $theme['logo']['large'] ?></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg"><?php echo __('Sign in to start your session') ?></p>
+        <p class="login-box-msg"><?php echo __d('dejw_cake_admin_lte', 'Sign in to start your session') ?></p>
         <p> <?php echo $this->Flash->render(); ?> </p>
-        <p> <?php echo $this->Flash->render('auth'); ?> </p>
 
         <?php echo $this->fetch('content'); ?>
 
@@ -41,11 +40,11 @@
         if (isset($theme['login']['show_social']) && $theme['login']['show_social']) {
             ?>
             <div class="social-auth-links text-center">
-                <p>- <?php echo __('OR') ?> -</p>
+                <p>- <?php echo __d('dejw_cake_admin_lte', 'OR') ?> -</p>
                 <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i
-                            class="fa fa-facebook"></i> <?php echo __('Sign in using Facebook') ?></a>
+                            class="fa fa-facebook"></i> <?php echo __d('dejw_cake_admin_lte', 'Sign in using Facebook') ?></a>
                 <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i
-                            class="fa fa-google-plus"></i> <?php echo __('Sign in using Google+') ?></a>
+                            class="fa fa-google-plus"></i> <?php echo __d('dejw_cake_admin_lte', 'Sign in using Google+') ?></a>
             </div>
             <?php
         }
@@ -54,12 +53,12 @@
         <?php
         if (isset($theme['login']['show_remember']) && $theme['login']['show_remember']) {
             ?>
-            <a href="#"><?php echo __('I forgot my password') ?></a><br>
+            <a href="#"><?php echo __d('dejw_cake_admin_lte', 'I forgot my password') ?></a><br>
             <?php
         }
         if (isset($theme['login']['show_register']) && $theme['login']['show_register']) {
             ?>
-            <a href="#" class="text-center"><?php echo __('Register a new membership') ?></a>
+            <a href="#" class="text-center"><?php echo __d('dejw_cake_admin_lte', 'Register a new membership') ?></a>
             <?php
         }
         ?>
