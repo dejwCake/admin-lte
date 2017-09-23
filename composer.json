@@ -1,8 +1,11 @@
 {
-    "name": "DejwCake/AdminLTE",
+    "name": "dejw-cake/adminlte",
     "description": "CakePHP 3.x AdminLTE Theme. Based on maiconpinto/cakephp-adminlte-theme.",
     "type": "cakephp-plugin",
-    "keywords": ["cakephp", "templates", "plugin"],
+    "keywords": [
+        "cakephp",
+        "templates",
+        "plugin"],
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +18,7 @@
             "name": "David Běhal",
             "email": "behal.david@gmail.com",
             "homepage": "https://www.dejw.sk/",
-            "role": "Author"
+            "role": "Developer"
         }
     ],
     "require": {
